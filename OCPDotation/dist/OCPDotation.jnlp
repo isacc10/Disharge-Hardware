@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="OCPDotation.jnlp">
+  <information>
+    <title>OCPDotation</title>
+    <vendor>Jamal</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  <shortcut><desktop/></shortcut>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\OCPDotation-Preloader.jar" size="3065" download="progress" />
+    <jar href="OCPDotation.jar" size="708854" download="eager" />
+    <jar href="lib\GNAvatarView-1.0-rc.jar" size="26082" download="eager" />
+    <jar href="lib\avalon-framework-4.1.3.jar" size="63966" download="eager" />
+    <jar href="lib\commons-logging-1.1.jar" size="52915" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="lib\dom4j-1.6.1.jar" size="313898" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\geronimo-stax-api_1.0_spec-1.0.jar" size="28592" download="eager" />
+    <jar href="lib\jfoenix-1.11.0.jar" size="2400735" download="eager" />
+    <jar href="lib\log4j-1.2.13.jar" size="358180" download="eager" />
+    <jar href="lib\logkit-1.0.1.jar" size="72150" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.16.jar" size="2293144" download="eager" />
+    <jar href="lib\poi-3.6.jar" size="1539291" download="eager" />
+    <jar href="lib\poi-ooxml-3.6.jar" size="412783" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-3.6.jar" size="3774332" download="eager" />
+    <jar href="lib\servlet-api-2.3.jar" size="77977" download="eager" />
+    <jar href="lib\stax-api-1.0.1.jar" size="26514" download="eager" />
+    <jar href="lib\xml-apis-1.0.b2.jar" size="109318" download="eager" />
+    <jar href="lib\xmlbeans-2.3.0.jar" size="2666695" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="OCPDotation" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="ocpdotation.OCPDotation"  name="OCPDotation"  preloader-class="ocpdotation.preloader.OCPDotation_Preloader"/>
+  <update check="always"/>
+</jnlp>

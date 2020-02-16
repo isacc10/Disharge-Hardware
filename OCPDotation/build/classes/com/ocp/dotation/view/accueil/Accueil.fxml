@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ocp.dotation.controller.AccueilController">
+   <children>
+      <VBox fx:id="slider" alignment="CENTER" styleClass="slider" stylesheets="@../theme/slider.css" StackPane.alignment="CENTER">
+         <children>
+            <Label fx:id="principale_para" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Un groupe engagé au service de l'agriculture durable" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Text fx:id="details" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Acteur majeur du marché mondial des engrais, notre Groupe accompagne le monde dans sa marche vers une agriculture plus prospère, plus durable et plus résiliente. Notre ambition en tant qu’entreprise africaine engagée pour le développement du continent est d’être le partenaire du développement de l’écosystème agricole en Afrique.   " textAlignment="CENTER" wrappingWidth="894.24609375">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gn.GNAvatarView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="700.0" style="-fx-background-color: white;" stylesheets="@../theme/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ocp.dotation.controller.DotationDataController">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" StackPane.alignment="TOP_CENTER">
+         <children>
+            <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="70.0" VBox.vgrow="SOMETIMES">
+               <children>
+                  <GNAvatarView prefHeight="70.0" prefWidth="90.0" type="RECT">
+                     <image>
+                        <Image url="@../theme/ocplogo.png" />
+                     </image>
+                  </GNAvatarView>
+               </children>
+            </HBox>
+            <HBox maxWidth="1.7976931348623157E308">
+               <children>
+                  <Label fx:id="DMI" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DMI-............................/19" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="date" alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Khouribga le .... / .... / 20.." HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </HBox>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="70.0" text="Décharge  de Matériel Informatique" textFill="#4a4545" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" spacing="5.0">
+               <children>
+                  <Label maxHeight="1.7976931348623157E308" styleClass="infos" text="Nature d'affectation :" textFill="#6b5f5f" underline="true" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nature" maxHeight="1.7976931348623157E308" style="-fx-background-color: #f4efef; -fx-background-radius: 2;" text="Renouvellement" textFill="#434040" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="2.0" left="20.0" right="20.0" top="2.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox>
+               <children>
+                  <Label styleClass="infos" text="Information utilisateur :" textFill="#6b5f5f" underline="true">
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="80.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="Matricule" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="matriculeUtilisateur" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="Q336782" textFill="#454244" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="Nom" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="nomUtilisateur" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="SAHRI" textFill="#464343" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="Prenom" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="prenomUtilisateur" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="Jamal Eddine" textFill="#464343" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="Entité" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="entiteUtilisateur" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="LAVERIE MEA" textFill="#464343" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="SA" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="SAUtilisateur" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="OCP" textFill="#464343" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label styleClass="infos" text="Informations Nouveau Matériel :" textFill="#6b5f5f" underline="true">
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="80.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="Libelle" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="nvLibelle" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="Q336782" textFill="#454244" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="Modèle" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="nvModele" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="SAHRI" textFill="#464343" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="N° de  série" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="nvNumSerie" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="Jamal Eddine" textFill="#464343" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="Date  d'affectation" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="nvDateAffectation" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="LAVERIE MEA" textFill="#464343" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="Lieu géographique" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="nvLieuGeo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="OCP" textFill="#464343" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label styleClass="infos" text="Informations  Matériel retourné :" textFill="#6b5f5f" underline="true">
+                     <padding>
+                        <Insets bottom="15.0" left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="80.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="Libelle" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="retLibelle" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="Q336782" textFill="#454244" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="Modèle" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="retModele" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="SAHRI" textFill="#464343" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="N° de  série" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="retNumSerie" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="Jamal Eddine" textFill="#464343" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="Date  d'affectation" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="retDateAffectation" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="LAVERIE MEA" textFill="#464343" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="NetBios" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="retNetBios" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="OCP" textFill="#464343" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-background-color: #d6c8c8;" text="N° Ticket SD" textFill="#464343">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="retNumTicketSD" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #f4efef;" text="OCP" textFill="#464343" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" spacing="5.0">
+               <children>
+                  <Label maxHeight="1.7976931348623157E308" styleClass="infos" text="Les fichiers reçus :" textFill="#6b5f5f" underline="true" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label graphicTextGap="10.0" maxHeight="1.7976931348623157E308" style="-fx-background-color: #f4efef; -fx-background-radius: 2;" text="DRI" textFill="#434040">
+                     <padding>
+                        <Insets bottom="2.0" left="20.0" right="20.0" top="2.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fx:id="DRI" fill="GREEN" glyphName="CHECK" />
+                     </graphic>
+                  </Label>
+                  <Label graphicTextGap="10.0" maxHeight="1.7976931348623157E308" style="-fx-background-color: #f4efef; -fx-background-radius: 2;" text="Fiche  d'expertise" textFill="#434040">
+                     <padding>
+                        <Insets bottom="2.0" left="20.0" right="20.0" top="2.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fx:id="ficheExpertise" fill="GREEN" glyphName="CHECK" />
+                     </graphic>
+                  </Label>
+                  <Label graphicTextGap="10.0" maxHeight="1.7976931348623157E308" style="-fx-background-color: #f4efef; -fx-background-radius: 2;" text="Mise en rebut" textFill="#434040">
+                     <padding>
+                        <Insets bottom="2.0" left="20.0" right="20.0" top="2.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fx:id="miseEnRebut" fill="GREEN" glyphName="CHECK" />
+                     </graphic>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="5.0">
+               <children>
+                  <Label graphicTextGap="10.0" maxHeight="1.7976931348623157E308" style="-fx-background-color: #f4efef; -fx-background-radius: 2;" text="Fichier reçus" textFill="#9d9696">
+                     <padding>
+                        <Insets bottom="2.0" left="20.0" right="20.0" top="2.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="9.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="GREEN" glyphName="CHECK" />
+                     </graphic>
+                  </Label>
+                  <Label graphicTextGap="10.0" maxHeight="1.7976931348623157E308" style="-fx-background-color: #f4efef; -fx-background-radius: 2;" text="Fichier pas encore reçus" textFill="#9d9696">
+                     <padding>
+                        <Insets bottom="2.0" left="20.0" right="20.0" top="2.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="9.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="RED" glyphName="WARNING" />
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gn.GNAvatarView?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(to left, #5ed90d,  #4baa0a);" stylesheets="@../theme/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ocp.dotation.controller.LoginController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" StackPane.alignment="CENTER">
+         <center>
+            <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="80">
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </FontAwesomeIconView>
+                  <JFXTextField fx:id="userName" focusColor="#6ac3ff" maxWidth="-Infinity" prefWidth="200.0" promptText="Nom d'utilisateur" styleClass="input" unFocusColor="WHITE" />
+                  <JFXPasswordField fx:id="password" focusColor="#6ac3ff" maxWidth="-Infinity" prefWidth="200.0" promptText="Mot de passe" styleClass="input" unFocusColor="WHITE" />
+                  <Label fx:id="errorMessage" alignment="CENTER" prefWidth="200.0" textFill="RED" />
+                  <JFXButton fx:id="btn_connect" buttonType="RAISED" onAction="#Identifier" prefWidth="200.0" style="-fx-background-color: white;" text="S'identifier" textFill="#8d8080">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+         <top>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <GNAvatarView prefHeight="150.0" prefWidth="120.0" stroke="#ffffff00" style="-fx-background-color: white; -fx-background-radius: 5;" type="RECT">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../theme/ocplogo.png" />
+                     </image>
+                  </GNAvatarView>
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Office chérifien des phosphates" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="15.0" left="10.0" top="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="Book Antiqua Bold" size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>

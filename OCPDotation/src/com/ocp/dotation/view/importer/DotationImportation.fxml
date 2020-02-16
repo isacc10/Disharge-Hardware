@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1100.0" style="-fx-background-color: white;" stylesheets="@../theme/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ocp.dotation.controller.DotationImportationController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" text="Importattion des données depuis un fichier Excel" textFill="#4d4848">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <TableView fx:id="tv_Disharge" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <columns>
+                  <TableColumn fx:id="tc_DMI" prefWidth="-1.0" text="DMI" />
+                  <TableColumn fx:id="tc_nature" prefWidth="-1.0" text="Nature" />
+                  <TableColumn fx:id="tc_date" prefWidth="-1.0" text="La Date" />
+                  <TableColumn fx:id="tc_matriculeUtilisateur" prefWidth="-1.0" text="Matricule utilisateur" />
+                  <TableColumn fx:id="tc_serieNvMateriel" prefWidth="-1.0" text="Nv materiel" />
+                  <TableColumn fx:id="tc_serieMaterielRet" prefWidth="-1.0" text="Materiel ret" />
+                  <TableColumn fx:id="tc_netBios" prefWidth="-1.0" text="NetBios" />
+                  <TableColumn fx:id="tc_numTicketSD" prefWidth="-1.0" text="N° Ticket SD" />
+                  <TableColumn fx:id="tc_fichiers" prefWidth="-1.0" text="DRI/FE/MR" />
+                  <TableColumn fx:id="tc_valider" prefWidth="-1.0" text="Valide" />
+                  <TableColumn fx:id="tc_inserer" prefWidth="-1.0" text="Inserer" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <HBox spacing="10.0">
+               <children>
+                  <Label graphicTextGap="10.0" maxHeight="1.7976931348623157E308" style="-fx-background-color: #f4efef; -fx-background-radius: 2;" textFill="#434040">
+                     <padding>
+                        <Insets bottom="2.0" left="20.0" right="20.0" top="2.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="GREEN" glyphName="PIE_CHART" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="succes" graphicTextGap="10.0" maxHeight="1.7976931348623157E308" style="-fx-background-color: #f4efef; -fx-background-radius: 2;" text="25%" textFill="#434040">
+                     <padding>
+                        <Insets bottom="2.0" left="20.0" right="20.0" top="2.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fx:id="DRI" fill="GREEN" glyphName="CHECK" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="failure" graphicTextGap="10.0" maxHeight="1.7976931348623157E308" style="-fx-background-color: #f4efef; -fx-background-radius: 2;" text="75%" textFill="#434040">
+                     <padding>
+                        <Insets bottom="2.0" left="20.0" right="20.0" top="2.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fx:id="DRI11" fill="GREEN" glyphName="WARNING" />
+                     </graphic>
+                  </Label>
+                  <HBox alignment="CENTER_RIGHT" spacing="10.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton fx:id="annuler" buttonType="RAISED" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" onAction="#Annuler" styleClass="reinitialiser" text="Annuler" textFill="#5e5252">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#5e5252" glyphName="TIMES" styleClass="search" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="Injecter" buttonType="RAISED" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" onAction="#Injecter" styleClass="sauvegarder" text="Injecter dans la base de données" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="DATABASE" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</StackPane>

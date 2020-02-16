@@ -1,0 +1,18 @@
+.button:hover{
+	-fx-background-color: #e6e6e640;
+	-fx-cursor : hand;
+}
+.button:pressed, .toggle-button:pressed {
+  	-fx-scale-x : 1.05;
+  	-fx-scale-y : 1.05;
+}
+
+.lbl{
+    -fx-background-color:  white;
+    -fx-background-radius:3;
+    -fx-border-radius:3;
+}
+.lbl:hover{
+    -fx-effect: dropshadow(three-pass-box, #9999ff, 10, 0, 0, 0);
+    -fx-border-width:1.5px;
+}
